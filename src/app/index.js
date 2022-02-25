@@ -8,14 +8,16 @@ import {Customer} from "./bus/customer";
 
 //Other
 import {client} from "./init/client";
+import {Login} from "./bus/customer/login";
 
 
 export const App = () => {
     return(
         <>
             <ApolloProvider client={client}>
-                {/*<Pet />*/}
-                <Customer />
+                {/*<Customer />*/}
+                <Login />
+                <Pet />
             </ApolloProvider>
         </>
     )
